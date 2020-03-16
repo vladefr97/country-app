@@ -1,0 +1,19 @@
+<div class="container">
+  <div *ngIf="country">
+    <h2>{{country.name |uppercase}}</h2>
+    <p>
+      <span>Capital: <span>{{country.capital}}</span></span>
+    </p>
+    <p><span>Area: <span>{{country.area |number}} km <sup>2</sup></span></span></p>
+    <p>
+      <span>Poplation: <span>{{country.population |number}}</span></span>
+    </p>
+    <p>
+      <span>GDP: <span>{{country.gdp|number}}</span></span>
+    </p>
+    <p>
+      <span>Currency: <span>{{country.currency}}</span></span>
+    </p>
+    <button (click)="goBack()">Go Back</button>
+  </div>
+</div>
